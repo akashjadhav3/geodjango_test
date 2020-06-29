@@ -125,3 +125,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+LEAFLET_CONFIG = {
+    'DEFAULT_CENTER': (20.5937, 78.9629), # SET DEFAULT PIN LOCATION
+    'DEFAULT_ZOOM':5,
+    'MAX_ZOOM':20,
+    'MIN_ZOOM':3,
+    'SCALE':'both',# KM or Miles option shows
+    'ATTRIBUTION_PREFIX':'Developed By Akash'
+}
