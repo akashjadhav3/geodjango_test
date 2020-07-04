@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.gis',
     'leaflet',
     'reporter',
+    'djgeojson',
+    #'geo'
 ]
 
 MIDDLEWARE = [
@@ -57,7 +59,7 @@ ROOT_URLCONF = 'geodjango_test.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -131,10 +133,10 @@ STATICFILES_DIRS = (
 )
 
 LEAFLET_CONFIG = {
-    'DEFAULT_CENTER': (20.5937, 78.9629), # SET DEFAULT PIN LOCATION
-    'DEFAULT_ZOOM':5,
-    'MAX_ZOOM':20,
-    'MIN_ZOOM':3,
+    # 'DEFAULT_CENTER': (20.5937, 78.9629), # SET DEFAULT PIN LOCATION
+    # 'DEFAULT_ZOOM':5,
+    # 'MAX_ZOOM':20,
+    # 'MIN_ZOOM':3,
     'SCALE':'both',# KM or Miles option shows
     'ATTRIBUTION_PREFIX':'Developed By Akash'
 }
